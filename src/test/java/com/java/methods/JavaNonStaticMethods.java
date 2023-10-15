@@ -4,6 +4,19 @@ public class JavaNonStaticMethods {
 
 	public static void main(String[] args) {
 		System.out.println("Demo on java methods");
+		
+		//Standard expression to create a class object
+		JavaNonStaticMethods object = new JavaNonStaticMethods();
+		
+		//Calling non-static method using class object
+		object.displayEmpName();
+		object.displayEmpName();
+		
+		//Calling non-static methods using class object
+		object.displayEmpName("John Doe");
+		System.out.println(object.getEmpSal());
+		System.out.println(object.getEmpSal(800));
+		System.out.println(object.getFullEmplyeeName("Th", "Kumar"));
 	}
 
 	// Declaring a java non-static method without params

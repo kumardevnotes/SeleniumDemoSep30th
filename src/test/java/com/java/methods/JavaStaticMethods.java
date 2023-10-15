@@ -42,6 +42,7 @@ public class JavaStaticMethods {
 		System.out.println(empSal);
 	}
 
+	// If you find java methods with same name, this is called method overloading in java
 	// Declaring a java static method without params
 	public static void displayEmpName() {
 		System.out.println("John Legend");
