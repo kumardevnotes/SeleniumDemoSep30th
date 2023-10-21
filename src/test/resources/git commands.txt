@@ -1,4 +1,4 @@
-git clone https://github.com/kumardevnotes/SeleniumDemoOct2nd.git
+git clone https://github.com/kumardevnotes/SeleniumDemosep30th.git
 
 How to push code from local to github using git version control commands ?
 git status
