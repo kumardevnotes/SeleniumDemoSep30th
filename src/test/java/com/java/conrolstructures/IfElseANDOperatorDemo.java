@@ -1,15 +1,27 @@
 package com.java.conrolstructures;
 
-public class ControlStructureIfElse {
+public class IfElseANDOperatorDemo {
 
 	public static void main(String[] args) {
 
-		int personAge = 17;
+		int personAge = 18;
 
 		// If..else is a control structure in Java
-		if (personAge >= 18 && personAge <= 60) { // 17 >= 18 && 17 <= 60 --> false && true --> false
+		// && -- AND operator in java
+		
+		/*
+		 * AND Operator
+		 * 
+		 * true && true --> true
+		 * true && false --> false
+		 * false && true --> false
+		 * false && false --> false
+		 * 
+		 * */
+		
+		if (personAge >= 18 && personAge <= 60) { // 77 >= 18 && 77 <= 60 --> true && false --> false
 			System.out.println("you can go to voting station and vote");
-		} else if (personAge > 60) { // 17 > 63 --> false
+		} else if (personAge > 60) { //77 > 60 --> true
 			System.out.println("You can vote online from your Home");
 		}
 		else {
