@@ -5,3 +5,14 @@ Pending Java Topics:
 3. Interfaces and Abstract keyword
 4. Java File IO
 5. Java Collections
+
+What is oops ? -- Objected Oriented Principles in java programming
+
+Class
+Object
+Inheritance
+Encapsulation
+Polymorphism -  Overloadig and overriding
+Interfaces and abstract keywords
+
+Access specifiers - public, private, protected
