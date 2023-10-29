@@ -16,3 +16,6 @@ Polymorphism -  Overloadig and overriding
 Interfaces and abstract keywords
 
 Access specifiers - public, private, protected
+final - var, method and class
+this - this represents child class object. using this you can access child class variables or methods (Ex: when you have same variable name as parent)
+super - super represents parent class object. using this you can access parent class variables or methods(Ex: when you have same variable name as parent)
