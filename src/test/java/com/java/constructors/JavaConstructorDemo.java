@@ -3,6 +3,8 @@ package com.java.constructors;
 public class JavaConstructorDemo {
 
 	
+	// Constructor overloading example
+	
 	//The Constructors with same then it is called constructor overloading - yes
 	
 	// Declaring a default constructor whose name is same as the className

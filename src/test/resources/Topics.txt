@@ -11,7 +11,7 @@ What is oops ? -- Objected Oriented Principles in java programming
 Class
 Object
 Inheritance
-Encapsulation
+Encapsulation -  Yet to discuss
 Polymorphism -  Overloadig and overriding
 Interfaces and abstract keywords
 
