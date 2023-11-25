@@ -9,6 +9,7 @@ public class JavaArraysDemo {
 		// If you can not utilize the full capacity of the array, then its a memory consumption without any use.
 		// Arrays store homogeneous data only. That means same type of data
 		// Arrays are not dynamic. Adding or deleting values by managing the capacity is not possible in Arrays
+		
 		int[] empIds = new int[10];
 		
 		int[] bankCustomerAccNumbers = new int[10000]; //5000

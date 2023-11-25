@@ -19,3 +19,18 @@ Access specifiers - public, private, protected
 final - var, method and class
 this - this represents child class object. using this you can access child class variables or methods (Ex: when you have same variable name as parent)
 super - super represents parent class object. using this you can access parent class variables or methods(Ex: when you have same variable name as parent)
+
+
+ ==== SELENIUM INTRO ======
+ 
+Selenium is an automation tool ? It Automates the human interaction on the browser
+Selenium/Selenium4/Selenium WebDriver/Selenium WebDriver4
+
+https://www.speaklanguages.com --> Web Browser --> Web Application
+
+Chrome/firefox/Edge/Safari -- > 
+
+VLC media player -Desktop -  We can not automate desktop using Selenium
+https://www.speaklanguages.com - Only WebApplications can be automated using Selenium
+
+Open Source automation tool
