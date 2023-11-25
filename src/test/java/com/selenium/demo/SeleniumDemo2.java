@@ -21,10 +21,13 @@ public class SeleniumDemo2 {
 		driver.get("https://speaklanguages.com");
 		WebElement logInElement = driver.findElement(By.linkText("Log in"));
 		logInElement.click();
-		WebElement emailFieldElement = driver.findElement(By.id("email_input"));
+		
+		WebElement emailFieldElement = driver.findElement(By.name("email"));
 		emailFieldElement.sendKeys("johnnitesh2@gmail.com");
+		
 		WebElement passwordFieldElement = driver.findElement(By.id("password_input"));
 		passwordFieldElement.sendKeys("Testing@123");
+		
 		WebElement loginBtnElement = driver.findElement(By.id("login_button"));
 		loginBtnElement.click();
 		Thread.sleep(4000);
