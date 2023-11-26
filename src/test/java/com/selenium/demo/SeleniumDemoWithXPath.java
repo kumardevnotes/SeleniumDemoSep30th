@@ -11,7 +11,8 @@ public class SeleniumDemoWithXPath {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://speaklanguages.com");
-		WebElement logInElement = driver.findElement(By.xpath("//a[.='Log in']"));
+		
+		WebElement logInElement = driver.findElement(By.xpath("//a[text()='Log in']")); //a[contains(text(),'Sign up')]
 		logInElement.click();
 		
 		WebElement emailFieldElement = driver.findElement(By.name("email"));
