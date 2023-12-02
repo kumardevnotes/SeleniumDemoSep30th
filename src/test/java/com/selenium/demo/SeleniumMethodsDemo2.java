@@ -22,7 +22,7 @@ public class SeleniumMethodsDemo2 {
 		// How to launch a fresh tab using selenium4
 		//driver.switchTo().newWindow(WindowType.TAB);
 		
-		driver.switchTo().newWindow(WindowType.TAB);
+		driver.switchTo().newWindow(WindowType.WINDOW);
 		
 		driver.get("https://facebook.com");
 		String window2 = driver.getWindowHandle();
