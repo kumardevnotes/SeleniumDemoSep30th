@@ -129,11 +129,14 @@ Alert.dismiss()-->
 findElement()-->
 // Resume on the below methods explanation next week, 16/17 september
 findElements()-->
+
 Select class in Selenium
 SelectByIndex()-->
 SelectBYValue()-->
 SelectByVisibleText()-->
+
 capture screenshot
+
 //Implicit and ExplicitWaits
 
    ::
