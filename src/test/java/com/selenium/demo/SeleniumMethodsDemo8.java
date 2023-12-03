@@ -33,31 +33,44 @@ public class SeleniumMethodsDemo8 {
 		WebElement pwdFieldElement  =driver.findElement(By.name("password"));
 		pwdFieldElement.sendKeys("pwd2424242");
 		
-		WebElement sexDDElement  = driver.findElement(By.name("sex"));
-		Select sexDD =  new Select(sexDDElement);
-		sexDD.selectByIndex(1);
-		Thread.sleep(2000);
+		//How to select values from dropdown using Select class in Selenium4?
 		
+		WebElement sexDDElement  = driver.findElement(By.name("sex"));
+		
+		Select sexDD =  new Select(sexDDElement);
+//		sexDD.selectByIndex(1);
+//		sexDD.selectByValue("Male");
+		sexDD.selectByVisibleText("Female");
+		Thread.sleep(2000);
 		
 		WebElement dayDdElement  = driver.findElement(By.name("dob_day"));
 		Select dayDD =  new Select(dayDdElement);
-		dayDD.selectByIndex(10);
+//		dayDD.selectByIndex(5);
+//		dayDD.selectByValue("6");
+		dayDD.selectByVisibleText("7");
 		Thread.sleep(2000);
 		
 		WebElement monthDdElement  = driver.findElement(By.name("dob_month"));
 		Select monthDD =  new Select(monthDdElement);
-		monthDD.selectByIndex(3);
+//		monthDD.selectByIndex(5);
+//		monthDD.selectByValue("6");
+		monthDD.selectByVisibleText("July");
 		Thread.sleep(2000);
 		
 		WebElement yearDdElement  = driver.findElement(By.name("dob_year"));
 		Select yearDD =  new Select(yearDdElement);
-		yearDD.selectByIndex(5);
+//		yearDD.selectByIndex(5);
+//		yearDD.selectByValue("1926");
+		yearDD.selectByVisibleText("1927");
 		
-		Thread.sleep(2000);
+		//If you want to deselect all the options which are already selected, call below ()
+//		yearDD.deselectAll();
+		
+		Thread.sleep(6000);
 		
 		driver.findElement(By.xpath("//input[@value='Sign up']")).click();
 		
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		driver.quit();
 
 	} 
