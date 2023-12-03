@@ -166,6 +166,43 @@ How to develop automation scripts in real time ?
 2. In developing the script logic to handle multiple scenarios in a single script
 
 Assignment: practice xpath and selenium methods
+
+
+===== TestNG ==== It is testing framework
+ Test Next Genaration
+ 
+ 1. Organize the TCs or Testscript development TCs (group the TCs, prioritize the TCs)
+ 2. Data driven testing
+ 3. Test Reports
+ 4. Easy to configure and run them in command prompt or in Jenkins build job
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
             
             
