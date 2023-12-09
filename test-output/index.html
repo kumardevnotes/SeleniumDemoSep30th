@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-DemoSuite" class="navigator-link">
-              <span class="suite-name border-failed">DemoSuite</span>
+              <span class="suite-name border-passed">DemoSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-DemoSuite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-DemoSuite" class="hide-methods failed suite-DemoSuite"> (hide)</a> <!-- hide-methods failed suite-DemoSuite -->
-                      <a href="#" panel-name="suite-DemoSuite" class="show-methods failed suite-DemoSuite"> (show)</a> <!-- show-methods failed suite-DemoSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-DemoSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo1" class="method navigator-link" hash-for-method="verifyAppLaunchInEdge1">verifyAppLaunchInEdge1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-DemoSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,17 @@
                     <div class="method-list-content passed suite-DemoSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo1" class="method navigator-link" hash-for-method="verifyAppLaunchInChrome1">verifyAppLaunchInChrome1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo3" class="method navigator-link" hash-for-method="launchSpeakLanguages">launchSpeakLanguages</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo2" class="method navigator-link" hash-for-method="verifyAppLaunchInChrome2">verifyAppLaunchInChrome2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo4" class="method navigator-link" hash-for-method="launchSpeakLanguages">launchSpeakLanguages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoSuite" title="com.testng.demo.TestNgDemo1" class="method navigator-link" hash-for-method="verifyAppLaunchInEdge1">verifyAppLaunchInEdge1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,39 +133,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-DemoSuite" class="panel DemoSuite">
-          <div class="suite-DemoSuite-class-failed">
+          <div class="suite-DemoSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.testng.demo.TestNgDemo1</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.demo.TestNgDemo3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAppLaunchInEdge1">
-                  </a> <!-- verifyAppLaunchInEdge1 -->
-                  <span class="method-name">verifyAppLaunchInEdge1</span>
-                  <div class="stack-trace">java.lang.AssertionError: Error message which tells the failure details
-	at com.testng.demo.TestNgDemo1.verifyAppLaunchInEdge1(TestNgDemo1.java:19)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="launchSpeakLanguages">
+                  </a> <!-- launchSpeakLanguages -->
+                  <span class="method-name">launchSpeakLanguages</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-DemoSuite-class-failed -->
+          </div> <!-- suite-DemoSuite-class-passed -->
+          <div class="suite-DemoSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.demo.TestNgDemo4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchSpeakLanguages">
+                  </a> <!-- launchSpeakLanguages -->
+                  <span class="method-name">launchSpeakLanguages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoSuite-class-passed -->
           <div class="suite-DemoSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.testng.demo.TestNgDemo2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAppLaunchInChrome2">
-                  </a> <!-- verifyAppLaunchInChrome2 -->
-                  <span class="method-name">verifyAppLaunchInChrome2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyAppLaunchInEdge2">
@@ -192,9 +186,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAppLaunchInChrome1">
-                  </a> <!-- verifyAppLaunchInChrome1 -->
-                  <span class="method-name">verifyAppLaunchInChrome1</span>
+                  <a name="verifyAppLaunchInEdge1">
+                  </a> <!-- verifyAppLaunchInEdge1 -->
+                  <span class="method-name">verifyAppLaunchInEdge1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,9 +204,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;DemoSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;AppLaunchTests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;SmokeTest&quot;/&gt;
+        &lt;exclude name=&quot;RegressionTest&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.testng.demo.TestNgDemo1&quot;/&gt;
       &lt;class name=&quot;com.testng.demo.TestNgDemo2&quot;/&gt;
+      &lt;class name=&quot;com.testng.demo.TestNgDemo3&quot;/&gt;
+      &lt;class name=&quot;com.testng.demo.TestNgDemo4&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AppLaunchTests --&gt;
 &lt;/suite&gt; &lt;!-- DemoSuite --&gt;
@@ -226,7 +228,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AppLaunchTests (2 classes)</span>
+                <span class="test-name">AppLaunchTests (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,6 +238,22 @@
             <span class="header-content">Groups for DemoSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">SmokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">launchSpeakLanguages</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAppLaunchInEdge1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAppLaunchInEdge2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-DemoSuite" class="panel">
@@ -256,24 +274,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAppLaunchInEdge1')
 data.setCell(0, 2, 'com.testng.demo.TestNgDemo1')
-data.setCell(0, 3, 9660);
+data.setCell(0, 3, 15722);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAppLaunchInChrome2')
+data.setCell(1, 1, 'verifyAppLaunchInEdge2')
 data.setCell(1, 2, 'com.testng.demo.TestNgDemo2')
-data.setCell(1, 3, 8453);
+data.setCell(1, 3, 9459);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAppLaunchInEdge2')
-data.setCell(2, 2, 'com.testng.demo.TestNgDemo2')
-data.setCell(2, 3, 8142);
+data.setCell(2, 1, 'launchSpeakLanguages')
+data.setCell(2, 2, 'com.testng.demo.TestNgDemo3')
+data.setCell(2, 3, 7149);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAppLaunchInChrome1')
-data.setCell(3, 2, 'com.testng.demo.TestNgDemo1')
-data.setCell(3, 3, 7600);
+data.setCell(3, 1, 'launchSpeakLanguages')
+data.setCell(3, 2, 'com.testng.demo.TestNgDemo4')
+data.setCell(3, 3, 5517);
 window.suiteTableData['DemoSuite']= { tableData: data, tableDiv: 'times-div-DemoSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-DemoSuite">
               </div> <!-- times-div-DemoSuite -->
             </div> <!-- times-div -->
@@ -288,9 +306,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-DemoSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testng.demo.TestNgDemo3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launchFacebook</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testng.demo.TestNgDemo4</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launchFacebook</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testng.demo.TestNgDemo2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyAppLaunchInChrome2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testng.demo.TestNgDemo1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyAppLaunchInChrome1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-DemoSuite" class="panel">
@@ -301,25 +347,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.demo.TestNgDemo1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyAppLaunchInEdge1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAppLaunchInChrome1</span>
-                <span class="method-start">9667 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testng.demo.TestNgDemo2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyAppLaunchInEdge2</span>
-                <span class="method-start">17273 ms</span>
+                <span class="method-start">15735 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.demo.TestNgDemo3</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyAppLaunchInChrome2</span>
-                <span class="method-start">25420 ms</span>
+                <span class="method-name">launchSpeakLanguages</span>
+                <span class="method-start">25199 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.demo.TestNgDemo4</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">launchSpeakLanguages</span>
+                <span class="method-start">32351 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

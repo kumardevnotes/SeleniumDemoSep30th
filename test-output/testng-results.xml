@@ -1,70 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-03T22:03:35 IST" name="DemoSuite" finished-at="2023-12-03T22:04:09 IST" duration-ms="33964">
+  <suite started-at="2023-12-09T20:19:03 IST" name="DemoSuite" finished-at="2023-12-09T20:19:41 IST" duration-ms="38167">
     <groups>
+      <group name="SmokeTest">
+        <method signature="TestNgDemo3.launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo3@15bb5034]" name="launchSpeakLanguages" class="com.testng.demo.TestNgDemo3"/>
+        <method signature="TestNgDemo4.launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo4@4b741d6d]" name="launchSpeakLanguages" class="com.testng.demo.TestNgDemo4"/>
+        <method signature="TestNgDemo1.verifyAppLaunchInEdge1()[pri:1, instance:com.testng.demo.TestNgDemo1@46cdf8bd]" name="verifyAppLaunchInEdge1" class="com.testng.demo.TestNgDemo1"/>
+        <method signature="TestNgDemo2.verifyAppLaunchInEdge2()[pri:1, instance:com.testng.demo.TestNgDemo2@7d0b7e3c]" name="verifyAppLaunchInEdge2" class="com.testng.demo.TestNgDemo2"/>
+      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2023-12-03T22:03:35 IST" name="AppLaunchTests" finished-at="2023-12-03T22:04:09 IST" duration-ms="33964">
+    <test started-at="2023-12-09T20:19:03 IST" name="AppLaunchTests" finished-at="2023-12-09T20:19:41 IST" duration-ms="38167">
       <class name="com.testng.demo.TestNgDemo2">
-        <test-method signature="verifyAppLaunchInEdge2()[pri:1, instance:com.testng.demo.TestNgDemo2@1ed4ae0f]" started-at="2023-12-03T22:03:53 IST" name="verifyAppLaunchInEdge2" finished-at="2023-12-03T22:04:01 IST" duration-ms="8142" status="PASS">
+        <test-method signature="verifyAppLaunchInEdge2()[pri:1, instance:com.testng.demo.TestNgDemo2@7d0b7e3c]" started-at="2023-12-09T20:19:19 IST" name="verifyAppLaunchInEdge2" finished-at="2023-12-09T20:19:28 IST" duration-ms="9459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppLaunchInEdge2 -->
-        <test-method signature="verifyAppLaunchInChrome2()[pri:2, instance:com.testng.demo.TestNgDemo2@1ed4ae0f]" started-at="2023-12-03T22:04:01 IST" name="verifyAppLaunchInChrome2" finished-at="2023-12-03T22:04:09 IST" duration-ms="8453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAppLaunchInChrome2 -->
       </class> <!-- com.testng.demo.TestNgDemo2 -->
       <class name="com.testng.demo.TestNgDemo1">
-        <test-method signature="verifyAppLaunchInEdge1()[pri:1, instance:com.testng.demo.TestNgDemo1@71ba6d4e]" started-at="2023-12-03T22:03:35 IST" name="verifyAppLaunchInEdge1" finished-at="2023-12-03T22:03:45 IST" duration-ms="9660" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message which tells the failure details]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message which tells the failure details
-at org.testng.Assert.fail(Assert.java:110)
-at com.testng.demo.TestNgDemo1.verifyAppLaunchInEdge1(TestNgDemo1.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyAppLaunchInEdge1()[pri:1, instance:com.testng.demo.TestNgDemo1@46cdf8bd]" started-at="2023-12-09T20:19:03 IST" name="verifyAppLaunchInEdge1" finished-at="2023-12-09T20:19:19 IST" duration-ms="15722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppLaunchInEdge1 -->
-        <test-method signature="verifyAppLaunchInChrome1()[pri:2, instance:com.testng.demo.TestNgDemo1@71ba6d4e]" started-at="2023-12-03T22:03:45 IST" name="verifyAppLaunchInChrome1" finished-at="2023-12-03T22:03:53 IST" duration-ms="7600" status="PASS">
+      </class> <!-- com.testng.demo.TestNgDemo1 -->
+      <class name="com.testng.demo.TestNgDemo4">
+        <test-method signature="launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo4@4b741d6d]" started-at="2023-12-09T20:19:35 IST" name="launchSpeakLanguages" finished-at="2023-12-09T20:19:41 IST" duration-ms="5517" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAppLaunchInChrome1 -->
-      </class> <!-- com.testng.demo.TestNgDemo1 -->
+        </test-method> <!-- launchSpeakLanguages -->
+      </class> <!-- com.testng.demo.TestNgDemo4 -->
+      <class name="com.testng.demo.TestNgDemo3">
+        <test-method signature="launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo3@15bb5034]" started-at="2023-12-09T20:19:28 IST" name="launchSpeakLanguages" finished-at="2023-12-09T20:19:35 IST" duration-ms="7149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSpeakLanguages -->
+      </class> <!-- com.testng.demo.TestNgDemo3 -->
     </test> <!-- AppLaunchTests -->
   </suite> <!-- DemoSuite -->
 </testng-results>

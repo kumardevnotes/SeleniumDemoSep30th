@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 
 public class TestNgDemo2 {
 
-	@Test (priority = 2)
+	@Test (priority = 2, groups = { "RegressionTest" })
 	public void verifyAppLaunchInChrome2() throws Exception {
 		launchApp("Chrome");
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 1, groups = { "SmokeTest" })
 	public void verifyAppLaunchInEdge2() throws Exception {
 		launchApp("Edge");
 	}

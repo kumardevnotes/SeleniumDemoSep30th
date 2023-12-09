@@ -6,14 +6,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
+//How to format code in eclipse ? ctrl + shift + f
 public class TestNgDemo1 {
 
-	@Test (priority = 2)
+	@Test (priority = 2, groups = { "SmokeTest","RegressionTest" })
 	public void verifyAppLaunchInChrome1() throws Exception {
 		launchApp("Chrome");
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 1, groups = { "SmokeTest" })
 	public void verifyAppLaunchInEdge1() throws Exception {
 		launchApp("Edge");
 //		Assert.fail("Error message which tells the failure details");
@@ -31,6 +33,8 @@ public class TestNgDemo1 {
 			driver = new EdgeDriver();
 			break;		
 		}
+		
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://speaklanguages.com");
 		driver.quit();
