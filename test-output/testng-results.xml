@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-09T20:19:03 IST" name="DemoSuite" finished-at="2023-12-09T20:19:41 IST" duration-ms="38167">
+  <suite started-at="2023-12-09T21:34:32 IST" name="DemoSuite" finished-at="2023-12-09T21:34:32 IST" duration-ms="105">
     <groups>
-      <group name="SmokeTest">
-        <method signature="TestNgDemo3.launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo3@15bb5034]" name="launchSpeakLanguages" class="com.testng.demo.TestNgDemo3"/>
-        <method signature="TestNgDemo4.launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo4@4b741d6d]" name="launchSpeakLanguages" class="com.testng.demo.TestNgDemo4"/>
-        <method signature="TestNgDemo1.verifyAppLaunchInEdge1()[pri:1, instance:com.testng.demo.TestNgDemo1@46cdf8bd]" name="verifyAppLaunchInEdge1" class="com.testng.demo.TestNgDemo1"/>
-        <method signature="TestNgDemo2.verifyAppLaunchInEdge2()[pri:1, instance:com.testng.demo.TestNgDemo2@7d0b7e3c]" name="verifyAppLaunchInEdge2" class="com.testng.demo.TestNgDemo2"/>
-      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2023-12-09T20:19:03 IST" name="AppLaunchTests" finished-at="2023-12-09T20:19:41 IST" duration-ms="38167">
-      <class name="com.testng.demo.TestNgDemo2">
-        <test-method signature="verifyAppLaunchInEdge2()[pri:1, instance:com.testng.demo.TestNgDemo2@7d0b7e3c]" started-at="2023-12-09T20:19:19 IST" name="verifyAppLaunchInEdge2" finished-at="2023-12-09T20:19:28 IST" duration-ms="9459" status="PASS">
+    <test started-at="2023-12-09T21:34:32 IST" name="AppLaunchTests" finished-at="2023-12-09T21:34:32 IST" duration-ms="105">
+      <class name="com.testng.demo.AllAnnotationsDemo1">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="beforeSuite" finished-at="2023-12-09T21:34:32 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAppLaunchInEdge2 -->
-      </class> <!-- com.testng.demo.TestNgDemo2 -->
-      <class name="com.testng.demo.TestNgDemo1">
-        <test-method signature="verifyAppLaunchInEdge1()[pri:1, instance:com.testng.demo.TestNgDemo1@46cdf8bd]" started-at="2023-12-09T20:19:03 IST" name="verifyAppLaunchInEdge1" finished-at="2023-12-09T20:19:19 IST" duration-ms="15722" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="beforeTest" finished-at="2023-12-09T21:34:32 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAppLaunchInEdge1 -->
-      </class> <!-- com.testng.demo.TestNgDemo1 -->
-      <class name="com.testng.demo.TestNgDemo4">
-        <test-method signature="launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo4@4b741d6d]" started-at="2023-12-09T20:19:35 IST" name="launchSpeakLanguages" finished-at="2023-12-09T20:19:41 IST" duration-ms="5517" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="beforeClass" finished-at="2023-12-09T21:34:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSpeakLanguages -->
-      </class> <!-- com.testng.demo.TestNgDemo4 -->
-      <class name="com.testng.demo.TestNgDemo3">
-        <test-method signature="launchSpeakLanguages()[pri:0, instance:com.testng.demo.TestNgDemo3@15bb5034]" started-at="2023-12-09T20:19:28 IST" name="launchSpeakLanguages" finished-at="2023-12-09T20:19:35 IST" duration-ms="7149" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="beforeMethod" finished-at="2023-12-09T21:34:32 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchSpeakLanguages -->
-      </class> <!-- com.testng.demo.TestNgDemo3 -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCase1()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="testCase1" finished-at="2023-12-09T21:34:32 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="afterMethod" finished-at="2023-12-09T21:34:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="afterClass" finished-at="2023-12-09T21:34:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="afterTest" finished-at="2023-12-09T21:34:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.testng.demo.AllAnnotationsDemo1@909217e]" started-at="2023-12-09T21:34:32 IST" name="afterSuite" finished-at="2023-12-09T21:34:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.testng.demo.AllAnnotationsDemo1 -->
+      <class name="com.testng.demo.AllAnnotationsDemo2">
+        <test-method signature="testCase2()[pri:0, instance:com.testng.demo.AllAnnotationsDemo2@cc43f62]" started-at="2023-12-09T21:34:32 IST" name="testCase2" finished-at="2023-12-09T21:34:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+      </class> <!-- com.testng.demo.AllAnnotationsDemo2 -->
     </test> <!-- AppLaunchTests -->
   </suite> <!-- DemoSuite -->
 </testng-results>

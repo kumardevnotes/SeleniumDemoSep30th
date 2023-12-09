@@ -34,3 +34,13 @@ VLC media player -Desktop -  We can not automate desktop using Selenium
 https://www.speaklanguages.com - Only WebApplications can be automated using Selenium
 
 Open Source automation tool
+
+=====================
+
+TestNg topics:
+
+params
+annotations
+data provider
+
+
