@@ -175,6 +175,10 @@ Assignment: practice xpath and selenium methods
  2. Data driven testing
  3. Test Reports
  4. Easy to configure and run them in command prompt or in Jenkins build job
+ 
+ 
+ POM - Page Object Model - Design pattern - best practice - good to have feature in automation
+ pom.xml -  project object model  xml doc - it is an xml document where we can add plugins and dependencies/libs of the project
 
 
 
