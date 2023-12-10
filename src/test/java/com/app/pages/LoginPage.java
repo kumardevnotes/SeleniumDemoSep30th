@@ -25,7 +25,7 @@ public class LoginPage {
 		driver.findElement(email_Field).sendKeys(emailAddress);
 		driver.findElement(password_Field).sendKeys(password);
 		driver.findElement(login_Btn).click();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		return driver.findElement(logged_In_UserName).getText();
 	}
 

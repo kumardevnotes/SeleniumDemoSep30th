@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.github.javafaker.Faker;
+
 public class SignupPage {
 	
 	WebDriver driver = null;
@@ -32,17 +34,19 @@ public class SignupPage {
 	
 	public String signUpWithApp() throws Exception {
 		
+		Faker fakerObj =  new Faker();
+		
 		WebElement firstNameFieldElement  = driver.findElement(firstName_Field);
-		firstNameFieldElement.sendKeys("John");
+		firstNameFieldElement.sendKeys(fakerObj.name().firstName());
 		
 		WebElement lastNameFieldElement  =driver.findElement(lastName_Field);
-		lastNameFieldElement.sendKeys("Legend");
+		lastNameFieldElement.sendKeys(fakerObj.name().lastName());
 		
 		WebElement emailFieldElement  =driver.findElement(emailAddress_Field);
-		emailFieldElement.sendKeys("Johlegendtrainerjohn@gmail.com");
+		emailFieldElement.sendKeys(fakerObj.internet().emailAddress());
 		
 		WebElement pwdFieldElement  =driver.findElement(password_Field);
-		pwdFieldElement.sendKeys("pwd2424242");
+		pwdFieldElement.sendKeys(fakerObj.internet().password());
 		
 		WebElement sexDDElement  = driver.findElement(gender_DD_Locator);
 		Select sexDD =  new Select(sexDDElement);
