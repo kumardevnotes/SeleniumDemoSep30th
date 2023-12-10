@@ -5,8 +5,7 @@
 	<test name="AppLaunchTests">
 
 		<classes>
-			<class name="com.testng.demo.AllAnnotationsDemo1" />
-			<class name="com.testng.demo.AllAnnotationsDemo2" />
+			<class name="com.app.tests.AppTests" />
 			<!-- class name="com.testng.demo.TestNgDemo2"/ -->
 		</classes>
 	</test>

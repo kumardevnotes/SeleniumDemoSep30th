@@ -8,13 +8,59 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">190</td><td></td><td></td></tr>
+<tr><th colspan="8">DemoSuite</th></tr>
+<tr><td><a href="#t0">AppLaunchTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">51,590</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.app.tests.AppTests</td><td><a href="#m0">verifyHomePage</a></td><td rowspan="1">1702141817981</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m1">verifyLogin</a></td><td rowspan="1">1702141818008</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m2">verifySignup</a></td><td rowspan="1">1702141818017</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DemoSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">AppLaunchTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.app.tests.AppTests</td><td><a href="#m0">verifyLogin</a></td><td rowspan="1">1702221483808</td><td rowspan="1">2640</td></tr><tr class="failedeven"><td><a href="#m1">verifySignup</a></td><td rowspan="1">1702221495631</td><td rowspan="1">16581</td></tr><tr><th colspan="4">AppLaunchTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.app.tests.AppTests</td><td><a href="#m2">verifyHomePage</a></td><td rowspan="1">1702221473047</td><td rowspan="1">1353</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.app.tests.AppTests#verifyHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.app.tests.AppTests#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.app.tests.AppTests#verifySignup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>AppLaunchTests</h2><h3 id="m0">com.app.tests.AppTests#verifyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;email_input&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9fab7580743adbc90dc9bf42ac6a59be, findElement {using=link text, value=email_input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50272}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50272/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fab7580743adbc90dc9bf42ac6a59be
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.app.pages.LoginPage.loginIntoApp(LoginPage.java:25)
+	at com.app.tests.AppTests.verifyLogin(AppTests.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.app.tests.AppTests#verifySignup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Thank you&apos;)]&quot;}
+  (Session info: chrome=120.0.6099.71)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83baa2b1d9936f1ebd6bfcaef259de54, findElement {using=xpath, value=//h1[contains(text(),&apos;Thank you&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50320}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50320/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83baa2b1d9936f1ebd6bfcaef259de54
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.app.pages.SignupPage.signUpWithApp(SignupPage.java:66)
+	at com.app.tests.AppTests.verifySignup(AppTests.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.app.tests.AppTests#verifyHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
